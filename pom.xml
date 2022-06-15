@@ -14,6 +14,7 @@
     <description>maven-release</description>
     <properties>
         <java.version>1.8</java.version>
+        <codeVersion>PC</codeVersion>
     </properties>
     <scm>
         <!--可读的SCM地址-->
@@ -52,7 +53,7 @@
                 <version>2.5.3</version>
                 <configuration>
                     <!--tag标签名-->
-                    <tagNameFormat>release-by-maven-${version}</tagNameFormat>
+                    <tagNameFormat>${version}-${codeVersion}</tagNameFormat>
                 </configuration>
             </plugin>
         </plugins>
