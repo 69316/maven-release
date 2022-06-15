@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>maven-release</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>maven-release</name>
     <description>maven-release</description>
     <properties>
@@ -22,7 +22,7 @@
         <developerConnection>scm:git:${scm.url}</developerConnection>
         <!--可以在浏览器中访问的scm地址-->
         <url>git@github.com:69316/maven-release.git</url>
-      <tag>release-by-maven-0.0.1-SNAPSHOT</tag>
+      <tag>HEAD</tag>
   </scm>
     <dependencies>
         <!-- spring-boot-web -->
