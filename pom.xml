@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>maven-release</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>maven-release</name>
     <description>maven-release</description>
     <properties>
@@ -17,11 +17,11 @@
     </properties>
     <scm>
         <!--可读的SCM地址-->
-        <connection>scm:git:${scm.url}</connection>
+        <connection>scm:git:git@github.com:69316/maven-release.git</connection>
         <!--可写的SCM地址-->
-        <developerConnection>scm:git:${scm.url}</developerConnection>
+        <developerConnection>scm:git:git@github.com:69316/maven-release.git</developerConnection>
         <!--可以在浏览器中访问的scm地址-->
-        <url>git@github.com:69316/maven-release.git</url>
+        <url>https://github.com/69316/maven-release</url>
   </scm>
     <dependencies>
         <!-- spring-boot-web -->
@@ -50,10 +50,8 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
                 <configuration>
-                    <goals>install</goals>
                     <!--tag标签名-->
                     <tagNameFormat>${version}</tagNameFormat>
-                    <preparationGoals>verify</preparationGoals>
                     <arguments>-Dmaven.javadoc.skip=true -Dmaven.site.skip=true</arguments>
                 </configuration>
             </plugin>
